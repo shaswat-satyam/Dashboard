@@ -1,0 +1,251 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    color: white;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p{
+    margin: 0;
+}
+
+h2{
+    margin: 0;
+}
+h4{
+    margin: 0;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: repeat(5,1fr);
+}
+
+.nav{
+    
+    grid-area: 1/1/6/1;
+    background-color: #3b82f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav > div{
+    color: white;
+    display: flex;
+    margin-bottom: 15%;
+}
+
+.nav> div > img{
+    margin-right: 5px;
+    margin-left: 20px;
+}
+
+.setting{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    align-items: center;
+    justify-content: space;
+}
+
+.head{
+    width: 100%;
+    justify-content: center;
+}
+
+.head>.img{
+    width: 15%;
+}
+
+.setting > div{
+    display: flex;
+    font-weight: 800;
+    margin-bottom: 15px;
+    align-items: center;
+    color: white;
+}
+
+.setting > div > img{
+    margin-right: 15px;
+    height: 125%;
+}
+
+.icon{
+    height: 75%;
+}
+
+.search{
+    color: black;
+    grid-area: 1/2/1/4;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 5px 5px black;
+}
+
+.upSearch{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#searchText{
+    width: 65%;
+    border-radius: 5px;
+    background-color: #e2e8f0;
+}
+
+.upSearch>img{
+    width: 2.5%;
+}
+
+.botSearch{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.leftSearch{
+    display: flex;
+}
+
+.leftSearch > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainPfp{
+    width: 55px;
+}
+
+.rightSearch{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.rightSearch > button{
+    background-color: #0ea5e9;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 75px;
+}
+
+.project{
+    grid-area: 2/2/6/3;
+    background-color: #e2e8f0;
+    color: black;
+}
+
+.projectContainer{
+    display: grid;
+    gap:20px;
+    background-color: #e2e8f0;
+    height: 100%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+
+.ProjectCard{
+    background-color: white;
+    border-radius: 5px;
+    z-index: 1;
+    border-left: 5px solid #f0b429;
+    margin-left: 10px;
+}
+
+.annouce{
+    color: black;
+    grid-area: 2/3/4/5;
+    background-color: #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    background-color: white;
+    box-shadow: 3px 2px gainsboro;
+    border-radius: 5px;
+    font-size: small;
+    line-height: 15px ;
+    height: 85%;
+    width: 95%;
+}
+
+.trending>.card{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.card>hr{
+    height: 50%;
+    color: #f0f9ff;
+}
+
+.trending{
+    grid-area: 4/3/6/5;
+    background-color: #e2e8f0;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2{
+    height: 95%;
+    width: 95%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+}
+
+.card2 > div{
+    display: flex;
+    justify-content: space-evenly;
+    height: 25%;
+}
+
+.user{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.userImg{
+    height:100% ;
+}
+
+.ProjectCard{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75%;
+}
+.cardText{
+    line-height: 15px;
+}
+.cardImages{
+    display: flex;
+    justify-content: end;
+}
+
+.cardImages > img{
+    width: 20px;
+}
+
